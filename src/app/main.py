@@ -14,10 +14,11 @@ def index():
 
 @app.route("/add")
 def add():
+    """Method test"""
     return str(
         int(request.args.get("a")) + 
         int(request.args.get("b"))
-        )
+    )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
