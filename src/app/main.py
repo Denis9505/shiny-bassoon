@@ -16,7 +16,7 @@ def index():
 def add():
     """Method test"""
     return str(
-        int(request.args.get("a")) + 
+        int(request.args.get("a")) +
         int(request.args.get("b"))
     )
 
